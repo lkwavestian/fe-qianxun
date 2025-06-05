@@ -1,0 +1,47 @@
+{
+  "name": "fe-qianxun",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@8.0.0",
+  "description": "Frontend Engineering Tools Collection",
+  "homepage": "https://github.com/maomao1996/femm#readme",
+  "bugs": {
+    "url": "https://github.com/maomao1996/femm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maomao1996/femm.git"
+  },
+  "license": "MIT",
+  "author": "maomao <1714487678@qq.com>",
+  "scripts": {
+    "changeset": "changeset",
+    "version": "changeset version && pnpm install",
+    "format": "prettier --write .",
+    "prepare": "npx simple-git-hooks"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.4",
+    "@fe-qianxun/prettier": "workspace:*",
+    "@fe-qianxun/verify-commit": "workspace:*",
+    "jest": "^29.7.0",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3",
+    "simple-git-hooks": "^2.13.0"
+  },
+  "prettier": "@fe-qianxun/prettier",
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged --quiet",
+    "commit-msg": "npx femm-verify-commit $1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,tsx,vue,css,scss,less,md}": [
+      "prettier --write"
+    ]
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@astrojs/cli-kit@0.2.3": "patches/@astrojs__cli-kit@0.2.3.patch"
+    }
+  }
+}
