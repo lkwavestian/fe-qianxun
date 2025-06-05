@@ -1,0 +1,27 @@
+{
+  "name": "@fe-qianxun/prettier",
+  "version": "1.0.0",
+  "description": "prettier config used by qianxun",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "homepage": "https://github.com/lkwavestian/fe-qianxun#readme",
+  "bugs": {
+    "url": "https://github.com/lkwavestian/fe-qianxun/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkwavestian/fe-qianxun.git"
+  },
+  "license": "MIT",
+  "author": "lkwavestian <lkwavestian@gmail.com>",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
