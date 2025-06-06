@@ -1,0 +1,37 @@
+{
+  "name": "@fe-qianxun/tailwind-config",
+  "version": "1.0.3",
+  "description": "tailwindcss config used by qianxun",
+  "keywords": [
+    "tailwindcss",
+    "tailwindcss-config"
+  ],
+  "homepage": "https://github.com/lkwavestian/fe-qianxun#readme",
+  "bugs": {
+    "url": "https://github.com/lkwavestian/fe-qianxun/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkwavestian/fe-qianxun.git"
+  },
+  "license": "MIT",
+  "author": "lkwavestian <lkwavestian@gmail.com>",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "test": "jest --clearCache && jest"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.21",
+    "tailwindcss": "~3.3.1"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0"
+  }
+}
