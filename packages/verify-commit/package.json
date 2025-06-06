@@ -1,7 +1,7 @@
 {
   "name": "@fe-qianxun/verify-commit",
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Simple commit message format verify",
   "keywords": [
     "git",
@@ -33,7 +33,7 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "devDependencies": {
+  "dependencies": {
     "picocolors": "^1.1.1",
     "terminal-link": "^3.0.0"
   }

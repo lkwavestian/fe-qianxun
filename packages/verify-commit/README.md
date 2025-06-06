@@ -4,9 +4,11 @@
 
 ## 安装与使用
 
-有两种使用方式，可使用`simple-git-hooks`运行 和 也可使用`husky`运行
+有两种使用方式，可使用`simple-git-hooks`运行 和 也可使用`husky`运行。
 
 ### 使用 `simple-git-hooks` 运行
+
+#### 安装
 
 ```sh
 pnpm add -D @fe-qianxun/verify-commit simple-git-hooks
@@ -42,6 +44,8 @@ npm pkg set scripts.prepare="npx simple-git-hooks"
 ```
 
 ### 使用 `husky` 运行
+
+#### 安装
 
 ```sh
 pnpm dlx husky-init && pnpm add -D @fe-qianxun/verify-commit
