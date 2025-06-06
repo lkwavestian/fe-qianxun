@@ -32,16 +32,11 @@
   "prettier": "@fe-qianxun/prettier",
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged --quiet",
-    "commit-msg": "npx femm-verify-commit $1"
+    "commit-msg": "npx fe-qianxun-verify-commit $1"
   },
   "lint-staged": {
     "*.{js,jsx,tsx,vue,css,scss,less,md}": [
       "prettier --write"
     ]
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "@astrojs/cli-kit@0.2.3": "patches/@astrojs__cli-kit@0.2.3.patch"
-    }
   }
 }

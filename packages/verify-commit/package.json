@@ -1,0 +1,40 @@
+{
+  "name": "@fe-qianxun/verify-commit",
+  "type": "module",
+  "version": "1.0.2",
+  "description": "Simple commit message format verify",
+  "keywords": [
+    "git",
+    "commit",
+    "message",
+    "commit-message",
+    "verify-commit",
+    "commit-msg"
+  ],
+  "homepage": "https://github.com/lkwavestian/fe-qianxun#readme",
+  "bugs": {
+    "url": "https://github.com/lkwavestian/fe-qianxun/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkwavestian/fe-qianxun.git"
+  },
+  "license": "MIT",
+  "author": "lkwavestian <lkwavestian@gmail.com>",
+  "main": "./index.js",
+  "bin": {
+    "fe-qianxun-verify-commit": "bin/index.js"
+  },
+  "files": [
+    "bin",
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "picocolors": "^1.1.1",
+    "terminal-link": "^3.0.0"
+  }
+}
